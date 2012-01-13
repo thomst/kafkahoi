@@ -12,7 +12,7 @@ data_files += [('', [db])]
 
 setup( 
     name = "kafkahoi",
-    version = "1.0.2",
+    version = "1.0.3",
     author = "Thomas Leichtfuss",
     author_email = "thomaslfuss@gmx.de",
     required = ['pygame', 'Tkinter'],

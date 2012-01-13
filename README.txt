@@ -1,7 +1,9 @@
-Um kafkahoi zu spielen muss Python 2.6.4 und Pygame installiert sein.
-Python-download: http://www.python.org/ftp/python/2.6.4/python-2.6.4.msi
-Pygame-download: http://pygame.org/ftp/pygame-1.9.1.win32-py2.6.msi
-(für Windows)
+Installation on Linux and hopefully MacOS (untested) aswell:
+python setup.py install
+to install on windows try to modify setup.cfg first (yet untested)
+
+pygame has to be installed (http://pygame.org)
+
 
 Anleitung für kafkahoi:
 	immer:
@@ -19,7 +21,7 @@ Anleitung für kafkahoi:
 		linke Maustaste = weißer Stern schießt
 		rechte Maustaste = fliederfarbene Stern sammelt
 
-		'y'/'c' oder ←/→ = weißer Stern zielt
+		's'/'f' oder ←/→ = weißer Stern zielt
 
 		SPACE oder ↓ = 	gesammelte Buchstaben werden abgeschleudert:
 							wenn die Buchstaben ein Wort des "gesuchten Gedichtes" bilden

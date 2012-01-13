@@ -147,8 +147,8 @@ class Game(setting.Setting, Screen, Sprites, Color, Background):
 ##### Events #####
 
 	def key(self, event, down):
-		if event.key in (121, 122, 276): self.star_1.right = down
-		if event.key in (99, 275): self.star_1.left = down
+		if event.key in (102, 122, 276): self.star_1.right = down
+		if event.key in (115, 275): self.star_1.left = down
 		if event.key in (32, 274) and down: self.poem_test()
 		if self.button and event.key == 97 and down: self._cheat()
 
