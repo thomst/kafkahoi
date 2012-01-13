@@ -17,9 +17,8 @@ http://pygame.org/ftp/pygame-1.9.1.win32-py2.6.msi
 
 import pygame, math, sys
 from pygame.locals import *
-#import game, snd, start, bug_2
-from Src import game, snd, start, bug_2
-from Src.data import Screen, Background, Sprites
+import game, snd, start, bug_2, editor
+from data import Screen, Background, Sprites
 
 import sqlite3
 import Tkinter as tk
@@ -83,7 +82,7 @@ class Main(Screen, Background, Sprites):
 			if event.key == 112: self.start._poem()
 			if event.key == 100: self.start._rating()
 			if event.key == 101:
-				execfile('Src/editor.py')
+				editor.Main()
 				self.__init__()
 
 	def _play(self, event, down):
@@ -106,5 +105,3 @@ class Main(Screen, Background, Sprites):
 			self.go = 1
 			pygame.event.set_grab(True)
 
-if __name__=='__main__':
-    Main()

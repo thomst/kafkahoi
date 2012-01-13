@@ -1,7 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+import os
 
+DB = '.kafkahoisdb'
+if os.stat(DB).st_uid == os.geteuid(): DATABASE = DB
+else: DATABASE = os.path.join(os.getenv('HOME'), DB)
 
 class Screen:
 	SCREEN = (650, 650)

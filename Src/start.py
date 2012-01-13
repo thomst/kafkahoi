@@ -7,6 +7,8 @@ from rating import Rating
 from poem import Poem
 from text import Text
 import sqlite3
+from data import DATABASE
+
 
 class Start(Text, Rating, Poem, Background, Txt, Color, Screen):
 	def __init__(self, screen, black):
@@ -38,7 +40,7 @@ class Start(Text, Rating, Poem, Background, Txt, Color, Screen):
 		self.gr_snd = pygame.sprite.GroupSingle()
 
 	def _pms(self):
-		c = sqlite3.connect('db').cursor()
+		c = sqlite3.connect(DATABASE).cursor()
 		c.execute('select title from poems')
 
 		if hasattr(os, 'uname'):	#spezifisch für Linux

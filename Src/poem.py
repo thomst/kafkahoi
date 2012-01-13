@@ -1,4 +1,4 @@
-from data import Screen
+from data import Screen, DATABASE
 import sqlite3
 import codecs
 
@@ -8,7 +8,7 @@ class Poem(Screen):
 
 		if poem == 'Game Over': txt = poem
 		else:
-			curs = sqlite3.connect('db').cursor()
+			curs = sqlite3.connect(DATABASE).cursor()
 			curs.execute('select poem from poems where title=?', (poem,))
 			txt = curs.fetchone()[0]
 			curs.close()

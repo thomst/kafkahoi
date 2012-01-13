@@ -1,16 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sqlite3
+import sqlite3, os
 import Tkinter as tk
 import tkMessageBox
+from data import DATABASE
 
 class Main():
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("Editor")
 
-        self.conn = sqlite3.connect('db')
+        self.conn = sqlite3.connect(DATABASE)
         self.f_list = 0
 
         self.add()
