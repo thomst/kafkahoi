@@ -67,9 +67,8 @@ class Main(Screen, Background, Sprites):
 				down = event.type == KEYDOWN
 				if event.type == QUIT: sys.exit(0)
 				if hasattr(event, 'key') and down:
-#					print(event.key)
+					print(event.key)
 					if event.key == 27: sys.exit(0)
-					if event.key == 115: self.start._snd()
 				if self.action == 0: self._start(event, down)
 				else: self._play(event, down)
 			if self.action == 0: self.start._render()
@@ -81,6 +80,7 @@ class Main(Screen, Background, Sprites):
 		if down:
 			if event.key == 112: self.start._poem()
 			if event.key == 100: self.start._rating()
+			if event.key == 115: self.start._snd()
 			if event.key == 101:
 				editor.Main()
 				self.__init__()
