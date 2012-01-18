@@ -67,7 +67,7 @@ class Main(Screen, Background, Sprites):
 				down = event.type == KEYDOWN
 				if event.type == QUIT: sys.exit(0)
 				if hasattr(event, 'key') and down:
-					print(event.key)
+#					print(event.key)
 					if event.key == 27: sys.exit(0)
 				if self.action == 0: self._start(event, down)
 				else: self._play(event, down)

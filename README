@@ -3,6 +3,26 @@ python setup.py install
 to install on windows try to modify setup.cfg first (yet untested)
 
 pygame has to be installed (http://pygame.org)
+You need KTinker as well.
+
+---****************---
+
+You control the movement of two little stars with the mouse. One can shoot, the other collect letters. The goal is to complete a poem or text. The Stars fly over the screen and react to the mouse-position. You have not a direct control but an influence of the movement.
+
+game control:
+-When you have collect enough letters that you can hope to complete a full word of the poem, then you chip the letters with SPACE. When you complete a word, they will fall into place.
+-Left mousebutton to shoot, right to collect.
+-With S and F you aim with the shooting one.
+-There is an additional option of movement-control with the scroll-button and without (shooting star) and pressed (collecting star) right button.
+
+Just have a try.
+
+You can also save and delete own texts with an editor. Sound is still very provisional.
+Precise description you can find in README.txt, but its at the moment only in german language...
+The game is tested with python 2.6.4 and pygame 1.9.1 on Linux/Ubuntu and Windows XP.
+
+---****************---
+
 
 
 Anleitung für kafkahoi:
