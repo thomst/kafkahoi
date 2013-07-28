@@ -33,9 +33,26 @@ On Linux/Ubuntu do ::
 
     sudo apt-get install python-pygame
     sudo apt-get install python-tk
-    tar -xzf kafkahoi-1.0.X.tar.gz
-    cd kafkahoi-1.0.X
+
+Get the zip-archive from github ::
+
+    wget https://github.com/thomst/kafkahoi/archive/master.zip
+    unzip master.zip
+    cd kafkahoi-master/
+
+Or download the tarball at http://sourceforge.net/projects/kafkahoi/
+and unpacking it ::
+
+    tar -xzf kafkahoi-1.0.4.tar.gz
+    cd kafkahoi-1.0.4/
+
+Install kafkahoi ::
+
     sudo python setup.py install
+
+Start the game with just typing ::
+
+    kafkahoi
 
 
 Gameplay
