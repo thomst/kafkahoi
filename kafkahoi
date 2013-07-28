@@ -18,6 +18,8 @@
 
 import os, sys, shutil
 
+__version__ = '1.0.4'
+
 localsrc = os.path.join(os.getcwd(), 'Src')
 if os.path.isdir(localsrc): CODEDIR = localsrc
 else:
