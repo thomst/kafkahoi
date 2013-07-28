@@ -67,19 +67,25 @@ playing-mode:
             quick correction of the hunter's movement
 * mouse-scroll + right mouse-button:
             quick correction of the gatherer's movement
-* <p>:      pause
+* <p>:
+            pause
 
 menu-mode:
 
-* <p>:      choose poem
-* <d>:      choose level of dificulty
-* <e>:      start editor (there you can add/delete poems)
+* <p>:
+            choose poem
+* <d>:
+            choose level of dificulty
+* <e>:
+            start editor (there you can add/delete poems)
 
 
 always:
 
-* <s>:      on/off sound
-* <esc>:    quit the game
+* <s>:
+            on/off sound
+* <esc>:
+            quit the game
 
 
 Contribution
